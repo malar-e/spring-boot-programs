@@ -11,7 +11,7 @@ import org.springframework.boot.ApplicationRunner;
 record Engine(String type, int horsepower) {}
 
 @SpringBootApplication
-@ComponentScan({"car", "example"})
+@ComponentScan("example")  
 public class CarApplication {
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(CarApplication.class, args);
